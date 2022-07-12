@@ -4,36 +4,33 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyComponent } from './main/apps/body/body.component';
-import { SidenavComponent } from './main/apps/sidenav/sidenav.component';
-import { HomeComponent } from './main/apps/home/home.component';
-import { ProductsComponent } from './main/apps/products/products.component';
-import { StatisticsComponent } from './main/apps/statistics/statistics.component';
-import { CoupensComponent } from './main/apps/coupens/coupens.component';
-import { PagesComponent } from './main/apps/pages/pages.component';
-import { MediaComponent } from './main/apps/media/media.component';
-import { SettingsComponent } from './main/apps/settings/settings.component';
-import { ErrorComponent } from './main/apps/error/error.component';
+import { BodyComponent } from './body/body.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductsComponent } from './products/products.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { CoupensComponent } from './coupens/coupens.component';
+import { PagesComponent } from './pages/pages.component';
+import { MediaComponent } from './media/media.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BodyComponent,
     SidenavComponent,
-    HomeComponent,
+    DashboardComponent,
     ProductsComponent,
     StatisticsComponent,
     CoupensComponent,
     PagesComponent,
     MediaComponent,
-    SettingsComponent,
-    ErrorComponent,
-
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
